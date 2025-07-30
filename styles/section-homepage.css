@@ -1,0 +1,157 @@
+
+
+footer{
+    color:white;
+    width:100vw;
+    height:8vh;
+    background-color: gray;
+    text-align: center;
+    display:flex;
+    align-items: center;
+} 
+
+.container2{
+    height:32vh;
+     width:100vw;
+     background-color: gray;
+    overflow: hidden;
+}
+.col{
+    height:32vh;
+
+}
+
+
+img{
+   transform: scale(1.3);
+   position: relative;
+  
+}
+.image-overlay {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.img-maquina,
+.img-tesoura {
+  position: absolute;
+  top: 10vh;
+  left: 10vw;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  transition: 1s;
+}
+
+.img-tesoura {
+  z-index: 2;
+ width: 90%;
+}
+
+.col-3.position-relative {
+  position: relative; 
+}
+
+.img-navalha {
+  position: absolute;
+  top: 0;
+  right: 10vw;
+  transform: translatey(-35%);
+  width: 100%;
+  z-index: 10;
+  transition: 1s;
+}
+.container2:hover .img-maquina{
+transform:scale(2) rotate(-10deg);
+transition: 1s;
+}
+.container2:hover .img-tesoura{
+transform:scale(1.5)  rotate(10deg);
+transition: 1s;
+}
+.container2:hover .img-navalha{
+transform:scale(1.6) translatey(-25%)  rotate(-10deg);
+transition: 1s;
+
+}
+
+.btn-agendar{
+    margin: 0 auto;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: visible;
+  padding: 40px 0; 
+  height: 80%;
+  width: 80%;
+}
+
+
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .carousel-card {
+    flex: 0 0 25%; 
+    padding: 10px;
+   
+  }
+
+  .carousel-card .card {
+    height: 80%;
+      overflow: hidden;
+     background-color: gray;
+  }
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10; 
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.carousel-arrow.left {
+  left: -25px; 
+}
+
+.carousel-arrow.right {
+  right: -25px;
+}
+
+.card-img-top {
+  width: 80%;
+  height: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  margin: 10px auto;
+  display: block;
+}
+
+.card-body{
+  margin-top:10px ;
+}
+.card-text{ 
+  font-family: monospace;
+  color: white;
+  
+}
+  @media (max-width: 768px) {
+    .carousel-card {
+      flex: 0 0 50%; 
+    }
+  }

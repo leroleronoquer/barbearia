@@ -1,0 +1,112 @@
+body{
+    background-color: lightgray;
+   
+}
+.solid{
+    border: solid gray 1px;
+}
+
+.clear{
+    border: none;
+    background-color: transparent;
+}
+.container1{
+    background-color: rgb(255, 237, 237);
+    width:100vw;
+    height:150vh;
+    border-radius: 0;
+    display:flex;
+    flex-direction: column;
+}
+header {
+  width: 100vw;
+  height: 10vh;
+  background-color: gray;
+  text-align: start;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.header {
+  height: 10vh;
+}
+
+.mini-picture {
+  position: absolute;
+  background-position: center;
+  background-size: auto 100%;
+  width: auto;
+  height: auto;
+  width: 42.5px;
+  height: 42.5px;
+  padding: 10px;
+  border-radius: 50px;
+ 
+}
+
+.name {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 42.5px;
+  width: 0%;
+  height: 42.5px;
+  line-height: 30px;
+  outline: 0;
+  border: 0;
+  border-radius: 25px;
+  padding-left: 5px;
+  padding-top: 4px;
+  transition: width 15s ease;
+
+  text-align: left;
+}
+
+.profile {
+  position: relative;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%);
+  background: gray;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  border: solid rgb(23, 23, 24) 4px;
+  border-radius: 25px;
+  transition: width 2s;
+  overflow: hidden;
+}
+.profile:hover {
+  width: 180px;
+  cursor: pointer;
+}
+.profile:hover .name {
+  width: 100%;
+  display: inline-block;
+}
+.navbar-nav {
+  left: 50%;
+}
+
+.nav-item {
+  margin: 0 20px;
+}
+.searchBtn {
+  border-radius: 50%;
+}
+
+.colorBrown {
+  background-color: A59090;
+}
+
+
+
+footer{
+    color:white;
+    width:100vw;
+    height:8vh;
+    background-color: gray;
+    text-align: center;
+    display:flex;
+    align-items: center;
+} 

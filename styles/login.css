@@ -1,0 +1,90 @@
+.button-login-transition{
+    background:black ;
+    transition: all 600ms ease;
+}
+.button-login-transition:hover{
+    background-color: gray;
+    color:black ;
+    box-shadow: 0 0 0 2px black;
+    
+}
+.button-go-to-register-transition{
+    background:black ;
+    transition: all 400ms ease;
+}
+.button-go-to-register-transition:hover{
+    color:darkgray ;
+
+}
+
+.start{
+    text-align: start;
+    font-size: small;
+    color:darkred;
+    
+}
+.span-required{
+    display:none;
+}
+
+.form-field{
+    margin-bottom: 10px;
+    width:85%;
+    height:15%;
+    align-items: center;
+    align-content: center;
+}
+
+.login-input{
+    width:100%;
+    border-radius:5px;
+    border: solid gray 1px;
+    height:50%;
+    padding-left: 4%; 
+}
+
+.login-text{
+  text-align: start;
+    font-size: large;
+}
+.login-button{
+    background-color: black;
+    color:white;
+    width:100%;
+    height: 50%;
+  
+ }
+
+ .form-login{
+    background-color: white;
+    width:100%;
+    border-radius:10px;
+    height: 100%;
+    padding-top:5%;
+    padding-left: 12%;
+
+    align-content: center;
+}
+
+.container1{
+    height:600px;
+    width:55%;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+@media(min-width:1200px){
+    .container1{
+        height:600px;
+        width:35%;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+
+}
